@@ -57,7 +57,6 @@
                 <desconto_general>
                     <enabled>0</enabled>
                     <desconto_jquery>1</desconto_jquery>
-					<desconto_xparcelas>0</desconto_xparcelas>
 					<desconto_desconto>0</desconto_desconto>                                       
                 </desconto_general>
             </desconto>
