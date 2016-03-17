@@ -11,13 +11,13 @@ $precoDesc = $preco * (1 - ($desconto/100));
 var $j = jQuery.noConflict();
 $j(document).ready(function(){
 $j(".input-box select").change(function(){
-$j('#desconto').html('<img src="<?php echo $this->getSkinUrl('images/kaury_desconto/ajax-loader.gif'); ?>"> Carregando');
+$j('#preco-desc').html('<img src="<?php echo $this->getSkinUrl('images/kaury_desconto/ajax-loader.gif'); ?>"> Carregando');
 $j.ajax({
 url: '<?php echo $this->getUrl("desconto")?>',
 type:"POST",
 data:({"preco": $j('.price-box span span.price').html()}),
 success: function(data) {
-$j('#desconto').html(data);
+$j('#preco-desc').html(data);
 }
 })
 })
